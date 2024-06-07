@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Intro to Javascript</title>
+			<script>
+				function add2Numbers()
+				{
+					var num1 = document.getElementById("firstnumber").value * 1.0;
+					var num2 = document.getElementById("secondnumber").value * 1.0;
+					document.getElementById("result").innerHTML = num1 + num2;
+					
+					
+				}
+				function average()
+				{
+					var num1 = document.getElementById("firstnumber").value * 1.0;
+					var num2 = document.getElementById("secondnumber").value * 1.0;
+					document.getElementById("result").innerHTML = ( num1 + num2 ) / 2.0;
+					
+					
+				}
+			</script>
+		</head>
+		<body>
+			<h1 id="myheading">
+				We are going to calculate
+			</h1>
+			<p>
+			<form 
+				<label for="firstnumber">First number:</label>
+				<input type="text" id="firstnumber" name="firstnumber"><br><br>
+				<label for="secondnumber">Second number:</label>
+				<input type="text" id="secondnumber" name="seondnumber"><br><br>
+	</form>
+			</p>
+			<button onclick="add2Numbers()">
+				Aus
+			</button>
+			<button onclick="average()">
+				Aus2
+			</button>
+			<p id="result" >
+		</p>
+	</body>
+</html>
